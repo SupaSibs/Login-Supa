@@ -1,2 +1,19 @@
 @use "_base" as *;
+body, %body { 
+height:100vh;
+@include flex(row);
+@include bg($Red, url("images/bg-intro-desktop.png"), $imgrepeat: repeat); 
+}
+main {
+@extend %body
+}
+.error, .success {
+display: none; 
+}
 
+@media screen and (max-width: 500px) {
+main {
+@include flex(column);
+@include bg($Red, url("images/bg-intro-desktop.png"), $imgrepeat: repeat)
+}	
+}

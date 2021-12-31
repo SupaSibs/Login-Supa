@@ -1,0 +1,32 @@
+body, main {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff7a7a;
+  background-image: url("images/bg-intro-desktop.png");
+  background-size: default;
+  background-repeat: repeat;
+  background-position: default;
+}
+
+.error, .success {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7a7a;
+    background-image: url("images/bg-intro-desktop.png");
+    background-size: default;
+    background-repeat: repeat;
+    background-position: default;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

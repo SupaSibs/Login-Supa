@@ -4,3 +4,16 @@ $Green: hsl(154, 59%, 51%);
 $Blue: hsl(248, 32%, 49%);
 $Dark-Blue: hsl(249, 10%, 26%);
 $Grayish-Blue: hsl(246, 25%, 77%);
+@mixin flex($direction, $align: center, $justify: center) {
+display:flex;
+flex-direction: $direction;
+align-items: $align; 
+justify-content: $justify;
+};
+@mixin bg($color:default,$image:none,$imgsize:default,$imgplace:default,$imgrepeat: no-repeat) {
+background-color: $color;
+background-image:$image;
+background-size:$imgsize;
+background-repeat:$imgrepeat;
+background-position:$imgplace;
+};
