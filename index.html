@@ -25,21 +25,24 @@
 </div>
 <div>
  <p> Try it free 7 days then $20/mo. thereafter </p>
-<form id="form">
-  <label for="first">First</label>
-  <input id="first" class="inputs" name="SignupForm"> <!--1-->
+ <div class="form">
+  <label for="first">
+  <input id="first" class="inputs" name="SignupForm" placeholder="First Name"> <!--1-->
   <p class="error">First Name cannot be empty.</p>
-  <label for="last">Last Name</label>
-  <input id="last" class="inputs" name="SignupForm"> <!--2-->
+  </label>
+  <label for="last">
+  <input id="last" class="inputs" name="SignupForm" placeholder="Last Name"> <!--2-->
   <p class="error">Last Name cannot be empty.</p> 
-  <label for="email">Email Address</label>
-  <input id="email" class="inputs" name="SignupForm"> <!--3-->
-  <label for="password">Password</label>
+  </label>
+  <label for="email">
+  <input id="email" class="inputs" name="SignupForm" placeholder="Email Address"> <!--3-->
+  <p class="error">Email Address cannot be empty</p>
+	  <label for="password">
+  <input id="password" class="inputs" name="SignupForm" placeholder="Password"> <!--4-->
   <p class="error">Password cannot be empty.</p>
-  <input id="password" class="inputs" name="SignupForm"> <!--4-->
-  <p class="error">Looks like this is not an email.</p>
-  <button type="submit" id="submit">Claim your free trial</button>
-  <span>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span></form>
+	  </label>
+  <button id="submit">Claim your free trial</button>
+  <span>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></span></div>
   </div>
   <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
@@ -49,3 +52,4 @@
   </main>
 </body>
 </html>
+

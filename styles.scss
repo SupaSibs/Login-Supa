@@ -1,19 +1,36 @@
 @use "_base" as *;
 body, %body { 
+scroll-behavior: smooth;
 height:100vh;
-@include flex(row);
+@include flex(row, $justify: space-around);
 @include bg($Red, url("images/bg-intro-desktop.png"), $imgrepeat: repeat); 
 }
+p, h1 {
+color: white;
+}
 main {
-@extend %body
+@extend %body;
 }
 .error, .success {
-display: none; 
+display: none;
+color: $Red;
+font-size: 8px;
 }
-
+.form {
+@include flex(column, flex-start, space-around); 
+background-color: white;
+padding: 15px;
+border-radius: 5px;
+}
+.inputs {
+color: black;
+display: block;
+margin: 5px;
+border: solid grey 1px;
+border-radius: 2.5px;
+}
 @media screen and (max-width: 500px) {
 main {
-@include flex(column);
+@include flex(column, $justify: space-around);
 @include bg($Red, url("images/bg-intro-desktop.png"), $imgrepeat: repeat)
-}	
-}
+}	}
