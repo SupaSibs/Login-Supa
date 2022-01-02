@@ -15,4 +15,16 @@ errors[2].style.display = "block";
 case (element.value === inparray[3].value):
 errors[3].style.display = "block";
 break;
+default:
+validateEmail(inparray[2].value);
+break;
 } } }
+function validateEmail(email) {
+let atCount = 0;
+for (const letter of inparray) {
+if (letter = "@") {
+atCount++; 
+} }
+if (atCount !== 1) {
+errors[2].style.display = "block";
+} }
