@@ -5,6 +5,9 @@ height:100vh;
 @include flex(row, $justify: space-around);
 @include bg($Red, url("images/bg-intro-desktop.png"), $imgrepeat: repeat); 
 }
+* {
+box-sizing: border-box;
+}
 p, h1 {
 color: white;
 }
@@ -21,16 +24,26 @@ font-size: 8px;
 background-color: white;
 padding: 15px;
 border-radius: 5px;
+height: 70vh;
 }
 .inputs {
 color: black;
 display: block;
-margin: 5px;
 border: solid grey 1px;
 border-radius: 2.5px;
+width: 100%;
 }
-@media screen and (max-width: 500px) {
+label {
+height: 20px;
+width: 80%;
+margin: 5px;
+}
+@media screen and (max-width: 600px) {
 main {
 @include flex(column, $justify: space-around);
-@include bg($Red, url("images/bg-intro-desktop.png"), $imgrepeat: repeat)
-}	}
+@include bg($Red, url("images/bg-intro-mobile.png"), $imgrepeat: repeat);
+min-height: 100vh;
+} 
+main * {
+margin: auto;
+} }

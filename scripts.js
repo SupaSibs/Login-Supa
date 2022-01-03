@@ -6,13 +6,13 @@ submit.addEventListener("click", validate.bind(globalThis, inputs));
 function validate(inparray) {
 for (const element of inparray) {
 switch (true) {
-case (element.value === inparray[0].value):
+case (element.value === inparray[0].value && element.value === ""):
 errors[0].style.display = "block";
-case (element.value === inparray[1].value):
+case (element.value === inparray[1].value && element.value === ""):
 errors[1].style.display = "block";
-case (element.value === inparray[2].value):
+case (element.value === inparray[2].value && element.value === ""):
 errors[2].style.display = "block";
-case (element.value === inparray[3].value):
+case (element.value === inparray[3].value && element.value === ""):
 errors[3].style.display = "block";
 break;
 default:

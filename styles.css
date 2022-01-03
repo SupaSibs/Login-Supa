@@ -12,6 +12,10 @@ body, main {
   background-position: default;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 p, h1 {
   color: white;
 }
@@ -30,27 +34,39 @@ p, h1 {
   background-color: white;
   padding: 15px;
   border-radius: 5px;
+  height: 70vh;
 }
 
 .inputs {
   color: black;
   display: block;
-  margin: 5px;
   border: solid grey 1px;
   border-radius: 2.5px;
+  width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+label {
+  height: 20px;
+  width: 80%;
+  margin: 5px;
+}
+
+@media screen and (max-width: 600px) {
   main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: #ff7a7a;
-    background-image: url("images/bg-intro-desktop.png");
+    background-image: url("images/bg-intro-mobile.png");
     background-size: default;
     background-repeat: repeat;
     background-position: default;
+    min-height: 100vh;
+  }
+
+  main * {
+    margin: auto;
   }
 }
 
